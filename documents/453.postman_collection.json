@@ -1,0 +1,345 @@
+{
+	"info": {
+		"_postman_id": "7212d7e7-762f-4427-9270-6b94afb1a8d9",
+		"name": "453",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "createPlayer",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"doNotDeleteMe4\",\r\n    \"password\": \"testpassword\",\r\n    \"emailAddress\": \"testatt4@gma.com\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://144.122.71.168:8083/server3/api/v1/player/create",
+					"protocol": "http",
+					"host": [
+						"144",
+						"122",
+						"71",
+						"168"
+					],
+					"port": "8083",
+					"path": [
+						"server3",
+						"api",
+						"v1",
+						"player",
+						"create"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "startGame",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://144.122.71.168:8083/server3/api/v1/game/start/doNotDeleteMe2",
+					"protocol": "http",
+					"host": [
+						"144",
+						"122",
+						"71",
+						"168"
+					],
+					"port": "8083",
+					"path": [
+						"server3",
+						"api",
+						"v1",
+						"game",
+						"start",
+						"doNotDeleteMe2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "playCard",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"rank\": \"FIVE\",\r\n    \"suit\": \"SPADES\",\r\n    \"token\": \"pFq7iEYX31\",\r\n    \"gameId\": 401,\r\n    \"playerId\": 34,\r\n    \"playerNo\": \"PLAYER1\",\r\n    \"tableState\": {\r\n        \"gameId\": 236,\r\n        \"player1Cards\": [\r\n                {\r\n                    \"suit\": \"SPADES\",\r\n                    \"rank\": \"FIVE\"\r\n                },\r\n                {\r\n                    \"suit\": \"CLUBS\",\r\n                    \"rank\": \"KING\"\r\n                },\r\n                {\r\n                    \"suit\": \"DIAMONDS\",\r\n                    \"rank\": \"ACE\"\r\n                },\r\n                {\r\n                    \"suit\": \"CLUBS\",\r\n                    \"rank\": \"ACE\"\r\n                }\r\n            ],\r\n            \"player2Cards\": null,\r\n            \"capturedCardsNumberByPlayer1\": 0,\r\n            \"capturedCardsNumberByPlayer2\": 0,\r\n            \"faceUpCards\": [\r\n                {\r\n                    \"suit\": \"CLUBS\",\r\n                    \"rank\": \"SEVEN\"\r\n                },\r\n                {\r\n                    \"suit\": \"DIAMONDS\",\r\n                    \"rank\": \"EIGHT\"\r\n                },\r\n                {\r\n                    \"suit\": \"DIAMONDS\",\r\n                    \"rank\": \"SIX\"\r\n                },\r\n                {\r\n                    \"suit\": \"DIAMONDS\",\r\n                    \"rank\": \"SEVEN\"\r\n                }\r\n            ],\r\n            \"faceDownCards\": [\r\n                {\r\n                    \"suit\": \"DIAMONDS\",\r\n                    \"rank\": \"TWO\"\r\n                },\r\n                {\r\n                    \"suit\": \"HEARTS\",\r\n                    \"rank\": \"FOUR\"\r\n                },\r\n                {\r\n                    \"suit\": \"HEARTS\",\r\n                    \"rank\": \"SIX\"\r\n                },\r\n                {\r\n                    \"suit\": \"CLUBS\",\r\n                    \"rank\": \"EIGHT\"\r\n                },\r\n                {\r\n                    \"suit\": \"CLUBS\",\r\n                    \"rank\": \"TWO\"\r\n                },\r\n                {\r\n                    \"suit\": \"HEARTS\",\r\n                    \"rank\": \"QUEEN\"\r\n                },\r\n                {\r\n                    \"suit\": \"SPADES\",\r\n                    \"rank\": \"ACE\"\r\n                },\r\n                {\r\n                    \"suit\": \"CLUBS\",\r\n                    \"rank\": \"JACK\"\r\n                },\r\n                {\r\n                    \"suit\": \"HEARTS\",\r\n                    \"rank\": \"FIVE\"\r\n                },\r\n                {\r\n                    \"suit\": \"DIAMONDS\",\r\n                    \"rank\": \"FIVE\"\r\n                },\r\n                {\r\n                    \"suit\": \"SPADES\",\r\n                    \"rank\": \"EIGHT\"\r\n                },\r\n                {\r\n                    \"suit\": \"SPADES\",\r\n                    \"rank\": \"SEVEN\"\r\n                },\r\n                {\r\n                    \"suit\": \"CLUBS\",\r\n                    \"rank\": \"FIVE\"\r\n                },\r\n                {\r\n                    \"suit\": \"SPADES\",\r\n                    \"rank\": \"JACK\"\r\n                },\r\n                {\r\n                    \"suit\": \"HEARTS\",\r\n                    \"rank\": \"THREE\"\r\n                },\r\n                {\r\n                    \"suit\": \"DIAMONDS\",\r\n                    \"rank\": \"JACK\"\r\n                },\r\n                {\r\n                    \"suit\": \"DIAMONDS\",\r\n                    \"rank\": \"NINE\"\r\n                },\r\n                {\r\n                    \"suit\": \"CLUBS\",\r\n                    \"rank\": \"FOUR\"\r\n                },\r\n                {\r\n                    \"suit\": \"SPADES\",\r\n                    \"rank\": \"KING\"\r\n                },\r\n                {\r\n                    \"suit\": \"HEARTS\",\r\n                    \"rank\": \"TWO\"\r\n                },\r\n                {\r\n                    \"suit\": \"HEARTS\",\r\n                    \"rank\": \"EIGHT\"\r\n                },\r\n                {\r\n                    \"suit\": \"HEARTS\",\r\n                    \"rank\": \"ACE\"\r\n                },\r\n                {\r\n                    \"suit\": \"CLUBS\",\r\n                    \"rank\": \"QUEEN\"\r\n                },\r\n                {\r\n                    \"suit\": \"DIAMONDS\",\r\n                    \"rank\": \"FOUR\"\r\n                },\r\n                {\r\n                    \"suit\": \"CLUBS\",\r\n                    \"rank\": \"NINE\"\r\n                },\r\n                {\r\n                    \"suit\": \"SPADES\",\r\n                    \"rank\": \"TEN\"\r\n                },\r\n                {\r\n                    \"suit\": \"CLUBS\",\r\n                    \"rank\": \"SIX\"\r\n                },\r\n                {\r\n                    \"suit\": \"CLUBS\",\r\n                    \"rank\": \"THREE\"\r\n                },\r\n                {\r\n                    \"suit\": \"HEARTS\",\r\n                    \"rank\": \"TEN\"\r\n                },\r\n                {\r\n                    \"suit\": \"DIAMONDS\",\r\n                    \"rank\": \"THREE\"\r\n                },\r\n                {\r\n                    \"suit\": \"SPADES\",\r\n                    \"rank\": \"FOUR\"\r\n                },\r\n                {\r\n                    \"suit\": \"SPADES\",\r\n                    \"rank\": \"QUEEN\"\r\n                },\r\n                {\r\n                    \"suit\": \"HEARTS\",\r\n                    \"rank\": \"SEVEN\"\r\n                },\r\n                {\r\n                    \"suit\": \"SPADES\",\r\n                    \"rank\": \"TWO\"\r\n                },\r\n                {\r\n                    \"suit\": \"DIAMONDS\",\r\n                    \"rank\": \"KING\"\r\n                },\r\n                {\r\n                    \"suit\": \"SPADES\",\r\n                    \"rank\": \"SIX\"\r\n                },\r\n                {\r\n                    \"suit\": \"SPADES\",\r\n                    \"rank\": \"THREE\"\r\n                },\r\n                {\r\n                    \"suit\": \"HEARTS\",\r\n                    \"rank\": \"JACK\"\r\n                },\r\n                {\r\n                    \"suit\": \"CLUBS\",\r\n                    \"rank\": \"TEN\"\r\n                },\r\n                {\r\n                    \"suit\": \"SPADES\",\r\n                    \"rank\": \"NINE\"\r\n                }\r\n            ],\r\n            \"computerCards\": [\r\n                {\r\n                    \"suit\": \"DIAMONDS\",\r\n                    \"rank\": \"QUEEN\"\r\n                },\r\n                {\r\n                    \"suit\": \"DIAMONDS\",\r\n                    \"rank\": \"TEN\"\r\n                },\r\n                {\r\n                    \"suit\": \"HEARTS\",\r\n                    \"rank\": \"KING\"\r\n                },\r\n                {\r\n                    \"suit\": \"HEARTS\",\r\n                    \"rank\": \"NINE\"\r\n                }\r\n            ],\r\n            \"capturedCardsNumberByComputer\": 0,\r\n            \"player1LevelScore\": 0,\r\n            \"player2LevelScore\": null,\r\n            \"computerLevelScore\": 0,\r\n            \"player1CumulativeScore\": 0,\r\n            \"level\": 1,\r\n            \"turn\": 1,\r\n            \"eventType\": \"START_GAME\"\r\n        }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://144.122.71.168:8083/server3/api/v1/playCard",
+					"protocol": "http",
+					"host": [
+						"144",
+						"122",
+						"71",
+						"168"
+					],
+					"port": "8083",
+					"path": [
+						"server3",
+						"api",
+						"v1",
+						"playCard"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\": \"doNotDeleteMe2\",\r\n    \"password\": \"testpassword\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://144.122.71.168:8083/server3/api/v1/player/login",
+					"protocol": "http",
+					"host": [
+						"144",
+						"122",
+						"71",
+						"168"
+					],
+					"port": "8083",
+					"path": [
+						"server3",
+						"api",
+						"v1",
+						"player",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cheat",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"gameId\": 401,\r\n    \"player1Cards\": [\r\n        {\r\n            \"suit\": \"SPADES\",\r\n            \"rank\": \"FIVE\"\r\n        },\r\n        {\r\n            \"suit\": \"CLUBS\",\r\n            \"rank\": \"KING\"\r\n        },\r\n        {\r\n            \"suit\": \"DIAMONDS\",\r\n            \"rank\": \"ACE\"\r\n        },\r\n        {\r\n            \"suit\": \"CLUBS\",\r\n            \"rank\": \"ACE\"\r\n        }\r\n    ],\r\n    \"player2Cards\": null,\r\n    \"capturedCardsNumberByPlayer1\": 0,\r\n    \"capturedCardsNumberByPlayer2\": 0,\r\n    \"faceUpCards\": [\r\n        {\r\n            \"suit\": \"CLUBS\",\r\n            \"rank\": \"SEVEN\"\r\n        },\r\n        {\r\n            \"suit\": \"DIAMONDS\",\r\n            \"rank\": \"EIGHT\"\r\n        },\r\n        {\r\n            \"suit\": \"DIAMONDS\",\r\n            \"rank\": \"SIX\"\r\n        },\r\n        {\r\n            \"suit\": \"DIAMONDS\",\r\n            \"rank\": \"SEVEN\"\r\n        }\r\n    ],\r\n    \"faceDownCards\": [\r\n        {\r\n            \"suit\": \"DIAMONDS\",\r\n            \"rank\": \"TWO\"\r\n        },\r\n        {\r\n            \"suit\": \"HEARTS\",\r\n            \"rank\": \"FOUR\"\r\n        },\r\n        {\r\n            \"suit\": \"HEARTS\",\r\n            \"rank\": \"SIX\"\r\n        },\r\n        {\r\n            \"suit\": \"CLUBS\",\r\n            \"rank\": \"EIGHT\"\r\n        },\r\n        {\r\n            \"suit\": \"CLUBS\",\r\n            \"rank\": \"TWO\"\r\n        },\r\n        {\r\n            \"suit\": \"HEARTS\",\r\n            \"rank\": \"QUEEN\"\r\n        },\r\n        {\r\n            \"suit\": \"SPADES\",\r\n            \"rank\": \"ACE\"\r\n        },\r\n        {\r\n            \"suit\": \"CLUBS\",\r\n            \"rank\": \"JACK\"\r\n        },\r\n        {\r\n            \"suit\": \"HEARTS\",\r\n            \"rank\": \"FIVE\"\r\n        },\r\n        {\r\n            \"suit\": \"DIAMONDS\",\r\n            \"rank\": \"FIVE\"\r\n        },\r\n        {\r\n            \"suit\": \"SPADES\",\r\n            \"rank\": \"EIGHT\"\r\n        },\r\n        {\r\n            \"suit\": \"SPADES\",\r\n            \"rank\": \"SEVEN\"\r\n        },\r\n        {\r\n            \"suit\": \"CLUBS\",\r\n            \"rank\": \"FIVE\"\r\n        },\r\n        {\r\n            \"suit\": \"SPADES\",\r\n            \"rank\": \"JACK\"\r\n        },\r\n        {\r\n            \"suit\": \"HEARTS\",\r\n            \"rank\": \"THREE\"\r\n        },\r\n        {\r\n            \"suit\": \"DIAMONDS\",\r\n            \"rank\": \"JACK\"\r\n        },\r\n        {\r\n            \"suit\": \"DIAMONDS\",\r\n            \"rank\": \"NINE\"\r\n        },\r\n        {\r\n            \"suit\": \"CLUBS\",\r\n            \"rank\": \"FOUR\"\r\n        },\r\n        {\r\n            \"suit\": \"SPADES\",\r\n            \"rank\": \"KING\"\r\n        },\r\n        {\r\n            \"suit\": \"HEARTS\",\r\n            \"rank\": \"TWO\"\r\n        },\r\n        {\r\n            \"suit\": \"HEARTS\",\r\n            \"rank\": \"EIGHT\"\r\n        },\r\n        {\r\n            \"suit\": \"HEARTS\",\r\n            \"rank\": \"ACE\"\r\n        },\r\n        {\r\n            \"suit\": \"CLUBS\",\r\n            \"rank\": \"QUEEN\"\r\n        },\r\n        {\r\n            \"suit\": \"DIAMONDS\",\r\n            \"rank\": \"FOUR\"\r\n        },\r\n        {\r\n            \"suit\": \"CLUBS\",\r\n            \"rank\": \"NINE\"\r\n        },\r\n        {\r\n            \"suit\": \"SPADES\",\r\n            \"rank\": \"TEN\"\r\n        },\r\n        {\r\n            \"suit\": \"CLUBS\",\r\n            \"rank\": \"SIX\"\r\n        },\r\n        {\r\n            \"suit\": \"CLUBS\",\r\n            \"rank\": \"THREE\"\r\n        },\r\n        {\r\n            \"suit\": \"HEARTS\",\r\n            \"rank\": \"TEN\"\r\n        },\r\n        {\r\n            \"suit\": \"DIAMONDS\",\r\n            \"rank\": \"THREE\"\r\n        },\r\n        {\r\n            \"suit\": \"SPADES\",\r\n            \"rank\": \"FOUR\"\r\n        },\r\n        {\r\n            \"suit\": \"SPADES\",\r\n            \"rank\": \"QUEEN\"\r\n        },\r\n        {\r\n            \"suit\": \"HEARTS\",\r\n            \"rank\": \"SEVEN\"\r\n        },\r\n        {\r\n            \"suit\": \"SPADES\",\r\n            \"rank\": \"TWO\"\r\n        },\r\n        {\r\n            \"suit\": \"DIAMONDS\",\r\n            \"rank\": \"KING\"\r\n        },\r\n        {\r\n            \"suit\": \"SPADES\",\r\n            \"rank\": \"SIX\"\r\n        },\r\n        {\r\n            \"suit\": \"SPADES\",\r\n            \"rank\": \"THREE\"\r\n        },\r\n        {\r\n            \"suit\": \"HEARTS\",\r\n            \"rank\": \"JACK\"\r\n        },\r\n        {\r\n            \"suit\": \"CLUBS\",\r\n            \"rank\": \"TEN\"\r\n        },\r\n        {\r\n            \"suit\": \"SPADES\",\r\n            \"rank\": \"NINE\"\r\n        }\r\n    ],\r\n    \"computerCards\": [\r\n        {\r\n            \"suit\": \"DIAMONDS\",\r\n            \"rank\": \"QUEEN\"\r\n        },\r\n        {\r\n            \"suit\": \"DIAMONDS\",\r\n            \"rank\": \"TEN\"\r\n        },\r\n        {\r\n            \"suit\": \"HEARTS\",\r\n            \"rank\": \"KING\"\r\n        },\r\n        {\r\n            \"suit\": \"HEARTS\",\r\n            \"rank\": \"NINE\"\r\n        }\r\n    ],\r\n    \"capturedCardsNumberByComputer\": 0,\r\n    \"player1LevelScore\": 0,\r\n    \"player2LevelScore\": null,\r\n    \"computerLevelScore\": 0,\r\n    \"player1CumulativeScore\": 0,\r\n    \"level\": 1,\r\n    \"turn\": 1,\r\n    \"eventType\": \"START_GAME\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://144.122.71.168:8083/server3/api/v1/game/cheat/",
+					"protocol": "http",
+					"host": [
+						"144",
+						"122",
+						"71",
+						"168"
+					],
+					"port": "8083",
+					"path": [
+						"server3",
+						"api",
+						"v1",
+						"game",
+						"cheat",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "generatePasswordWithToken",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://144.122.71.168:8083/server3/api/v1/resetPassword/generatePassword?token=resetToken&cancel=0",
+					"protocol": "http",
+					"host": [
+						"144",
+						"122",
+						"71",
+						"168"
+					],
+					"port": "8083",
+					"path": [
+						"server3",
+						"api",
+						"v1",
+						"resetPassword",
+						"generatePassword"
+					],
+					"query": [
+						{
+							"key": "token",
+							"value": "resetToken"
+						},
+						{
+							"key": "cancel",
+							"value": "0"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "sendResetPasswordEmail",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://144.122.71.168:8083/server3/api/v1/resetPassword/sendEmail/batuhangokce98@gmail.com",
+					"protocol": "http",
+					"host": [
+						"144",
+						"122",
+						"71",
+						"168"
+					],
+					"port": "8083",
+					"path": [
+						"server3",
+						"api",
+						"v1",
+						"resetPassword",
+						"sendEmail",
+						"batuhangokce98@gmail.com"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAllTimesScore",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://144.122.71.168:8083/server3/api/v1/score/allTimes",
+					"protocol": "http",
+					"host": [
+						"144",
+						"122",
+						"71",
+						"168"
+					],
+					"port": "8083",
+					"path": [
+						"server3",
+						"api",
+						"v1",
+						"score",
+						"allTimes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getWeeklyScore",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://144.122.71.168:8083/server3/api/v1/score/weekly",
+					"protocol": "http",
+					"host": [
+						"144",
+						"122",
+						"71",
+						"168"
+					],
+					"port": "8083",
+					"path": [
+						"server3",
+						"api",
+						"v1",
+						"score",
+						"weekly"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getMonthlyScore",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://144.122.71.168:8083/server3/api/v1/score/monthly",
+					"protocol": "http",
+					"host": [
+						"144",
+						"122",
+						"71",
+						"168"
+					],
+					"port": "8083",
+					"path": [
+						"server3",
+						"api",
+						"v1",
+						"score",
+						"monthly"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "saveScore",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://144.122.71.168:8083/server3/api/v1/score/save/1/150",
+					"protocol": "http",
+					"host": [
+						"144",
+						"122",
+						"71",
+						"168"
+					],
+					"port": "8083",
+					"path": [
+						"server3",
+						"api",
+						"v1",
+						"score",
+						"save",
+						"1",
+						"150"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
